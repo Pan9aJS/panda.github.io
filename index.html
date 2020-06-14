@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="src/css/index.css">
 </head>
 
-
 <body>
     <div id="scroll-alert" class="alert-box">
         <p>↓</p>
@@ -73,7 +72,30 @@
             </div>
         </div>
     </section>
-    <script src="src/js/index.js"></script>
+    <script>
+        (() => {
+            let hideArrow = () => {
+                let el = document.getElementById('scroll-alert');
+                !!el ? el.remove() : '';
+
+                window.removeEventListener('scroll', hideArrow, false);
+                hideArrow = null;
+            };
+
+            window.addEventListener('scroll', hideArrow);
+
+            document.getElementById('scroll-alert')
+                .onclick = () => {
+                    document.querySelector('.projects')
+                        .scrollIntoView({
+                            block: "center",
+                            behavior: "smooth"
+                        });
+                };
+        })();
+    </script>
+
+    <!-- <script src="src/js/index.js"></script> -->
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/likeControl.js"></script>
 </body>
