@@ -1,0 +1,49 @@
+body {
+    background: darkgray;
+}
+
+h1 {
+    text-align: center;
+    background: #1e97bb;
+    color: white;
+}
+
+.convert-block {
+    border: 1px solid black;
+    width: fit-content;
+    text-align: center;
+    background: cadetblue;
+    margin: 0 auto;
+}
+
+.wrapper_input {
+    display: inline;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+input {
+    text-align: center;
+    font-family: monospace;
+    background: rgba(225, 225, 225, 0.5);
+    border: 1px solid white;
+}
+
+input:focus {
+    background: white;
+    border: 1px solid #16ceff;
+}
+
+button {
+    background: #3188a2;
+    color: white;
+}
+
+sub {
+    font-size: 11px;
+}
+
+.wrapper_output {
+    background: beige;
+    font-family: cursive;
+}

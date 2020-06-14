@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="input-windows">
+            <input type="text" id="input" disabled>
+            <input type="text" id="output" disabled>
+        </div>
+        <div class="container-buttons">
+            <div id="clear" class="btn btn-calc" data-value='clear'><span>C</span></div>
+            <div id="round_bracketL" class="btn btn-calc" data-value="("><span>&#40;</span></div>
+            <div id="round_bracketR" class="btn btn-calc" data-value=")"><span>&#41;</span></div>
+            <div id="plus" class="btn btn-calc" data-value="+"><span>&#43;</span></div>
+            <div class="btn btn-num" data-value="1">
+                <span>1</span>
+            </div>
+            <div class="btn btn-num" data-value="2">
+                <span>2</span>
+            </div>
+            <div class="btn btn-num" data-value="3">
+                <span>3</span>
+            </div>
+            <div class="btn btn-minus" data-value="-">
+                <span>&#45;</span>
+            </div>
+            <div class="btn btn-num" data-value="4">
+                <span>4</span>
+            </div>
+            <div class="btn btn-num" data-value="5">
+                <span>5</span>
+            </div>
+            <div class="btn btn-num" data-value="6">
+                <span>6</span>
+            </div>
+            <div class="btn btn-divided" data-value="/">
+                <span>&divide;</span>
+            </div>
+            <div class="btn btn-num" data-value="7">
+                <span>7</span>
+            </div>
+            <div class="btn btn-num" data-value="8">
+                <span>8</span>
+            </div>
+            <div class="btn btn-num" data-value="9">
+                <span>9</span>
+            </div>
+            <div class="btn btn-multiple" data-value="*">
+                <span>&#42;</span>
+            </div>
+            <div class="btn btn-num" data-value="0">
+                <span>0</span>
+            </div>
+            <div class="btn btn-dot" data-value=".">
+                <span>&#46;</span>
+            </div>
+            <div class="btn btn-remove" data-value="backspace">
+                <span>↩</span>
+            </div>
+            <div class="btn btn-equals" data-value="=">
+                <span>&#61;</span>
+            </div>
+        </div>
+        <div class="theme-switch">
+            <div class="theme theme1">
+                <button>theme1</button>
+            </div>
+            <div class="theme theme2">
+                <button>theme2</button>
+            </div>
+            <div class="theme theme3">
+                <button>theme3</button>
+            </div>
+            <div class="theme theme4">
+                <button>theme4</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

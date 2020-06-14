@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>volume calculator</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/amount.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputs">
+            <input type="text" id="value_a" placeholder="Введите длину в см:">
+            <input type="text" id="value_b" placeholder="Введите ширину в см:">
+            <input type="text" id="value_h" placeholder="Введите высоту в см:">
+        </div>
+
+        <button class="btn-calc" id="calculate">рассчитать</button>
+
+        <div class="output-container">
+            <table border="1" class="table-amount">
+                <caption>результат вычисления объема прямоугольной формы </caption>
+                <tbody>
+                    <th colspan="1">единицы</th>
+                    <th colspan="1">результат</th>
+                    <tr>
+                        <td class="output">
+                            В см<sup>3</sup>:
+                        </td>
+                        <td>
+                            <span id="value_cm">0</span>см<sup>3</sup>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="output">
+                            В литрах:
+                        </td>
+                        <td>
+                            <span id="value_liter">0</span>л.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="output">
+                            В тоннах:
+                        </td>
+                        <td>
+                            <span id="value_tonne">0</span>т.
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="src/js/amount.js"></script>
+
+</body>
+
+</html>

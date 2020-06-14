@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: indianred;
+}
+
+.block-range {
+    display: grid;
+    width: 300px;
+    margin: 20px auto;
+    font-family: cursive;
+    color: black;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.block-range input {
+    margin: 15px 0px;
+}
+
+.block-range input,
+.block-range input+label {
+    width: 100%;
+}
+
+input+label {
+    background: #656262;
+    text-align: center;
+    color: white;
+}
+
+.button-generate {
+    cursor: pointer;
+}
+
+.block-range p>span {
+    display: block;
+    font-size: calc(100% / 1.8);
+    font-family: auto;
+    padding: 7px 5px 10px 10px;
+    color: white;
+    background: black;
+}
+
+@media (max-width:365px) {
+    .block-range {
+        font-size: 1.5em;
+        width: min-content;
+        margin: 0px auto;
+    }
+}

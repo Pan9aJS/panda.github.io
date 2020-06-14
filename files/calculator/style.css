@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(7, 17, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    border-radius: 25px;
+    background: rgb(20, 158, 178);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    color: white;
+}
+
+.input-windows {
+    margin: 0 0 10px;
+}
+
+.input-windows,
+.input-windows>input {
+    width: 100%;
+}
+
+.input-windows>input {
+    font-size: 28px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    background: rgb(34, 44, 68);
+    color: white;
+    border: 2px solid black;
+    overflow: overlay;
+}
+
+.input-windows>input:nth-child(1) {
+    border-bottom: 2px solid black;
+    height: 33px;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.container-buttons {
+    display: grid;
+    width: 100%;
+    color: inherit;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container-buttons>div {
+    background: rgb(19, 17, 67);
+    width: 75%;
+    text-align: center;
+    margin: 5px 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 120ms ease-in;
+    -webkit-transition: 120ms ease-in;
+    -moz-transition: 120ms ease-in;
+    -ms-transition: 120ms ease-in;
+    -o-transition: 120ms ease-in;
+}
+
+.container-buttons>div>span {
+    /**
+             * Для эксплорера
+             */
+    -ms-user-select: none;
+    /**
+             * Для мозилы
+             */
+    -moz-user-select: none;
+    /**
+             * Для конкверора
+             */
+    -khtml-user-select: none;
+    /**
+             * Для Сафари и Хрома
+             */
+    -webkit-user-select: none;
+}
+
+.container-buttons>div:hover {
+    box-shadow: inset 1px 1px 20px #082ec7, inset -1px -1px 10px red;
+}
+
+.calculator>.theme-switch {
+    display: flex;
+    justify-content: space-around;
+    margin: 3px auto 0;
+    width: fit-content;
+}
+
+.theme-switch>.theme {
+    margin: 0 5px;
+}
+
+.theme-switch .theme>button {
+    background: cadetblue;
+    color: black;
+    border-radius: 20px;
+    font-family: monospace;
+    border-color: cornsilk;
+}
