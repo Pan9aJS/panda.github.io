@@ -24,8 +24,7 @@ window.onload = () => {
 
         function showImage(e) {
             let i;
-
-            const img = document.querySelectorAll('img');
+            const img = document.querySelectorAll('.images > img');
             const sliders = document.querySelectorAll('.btm-sliders span');
 
             if (e > img.length) indexValue = 1;

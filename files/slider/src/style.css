@@ -66,10 +66,8 @@ body {
     cursor: pointer;
 }
 
-.slide span {
-    font-size: 35px;
-    color: white;
-    line-height: 41px;
+.slide img {
+    transform: scaleX(0.6) scaleY(0.7);
 }
 
 .content .left {
