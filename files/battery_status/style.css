@@ -8,6 +8,9 @@ body {
     width: 100vw;
     height: 100vh;
     background: #4eaae0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .battery {
@@ -15,7 +18,9 @@ body {
     width: 35vw;
     height: 10vw;
     border: 1px solid black;
-    margin: 10px auto;
+    /* font-size: calc(100vw / 13 - 10%); */
+    font-size: calc(100vw / 13 - 60%);
+    box-shadow: -3px 3px 3px 0px black;
 }
 
 .battery-level-block {
@@ -32,7 +37,6 @@ body {
     justify-content: center;
     align-items: center;
     font-family: cursive;
-    font-size: 1.5em;
     background: rgba(0, 0, 0, 0.3);
     filter: drop-shadow(4px 4px 1px grey);
 }
@@ -40,7 +44,6 @@ body {
 .battery-level-percentage p {
     color: white;
     z-index: 2;
-    font-size: calc(1.2rem + 1px + (100vw - 320px) / 1000);
 }
 
 .battery-level-block.anim {
@@ -82,19 +85,4 @@ body {
     100% {
         width: 100%;
     }
-}
-
-.alert-warning {
-    width: calc(100vw / 2);
-    margin: 30px auto;
-    font-family: cursive;
-    font-size: calc(0.7rem + 6 * (100vw - 320px) / 900);
-    color: white;
-    background: #c73e3ec4;
-    padding: 10px;
-}
-
-.alert-warning p {
-    text-shadow: -2px 1px 0px black;
-    box-shadow: 0px 0px 20px 20px white;
 }
