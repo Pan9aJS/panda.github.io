@@ -5,34 +5,51 @@
 }
 
 body {
-    background-color: blueviolet;
+    background-color: #2b31e291;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    width: 300px;
-    height: auto;
-    background-color: #000000;
+    width: 95%;
+    max-width: 500px;
+    height: max-content;
+    background-color: #a59a9a57;
     border: 1px solid black;
     margin: 50px auto;
     padding: 5px;
+    box-shadow: -5px 4px 3px 4px #492663;
 }
 
 .coronavirusNews {
-    background: #00024c;
+    background: linear-gradient(-19deg, black 40%, white 95%);
     color: white;
     text-align: center;
     font-family: sans-serif;
     text-transform: uppercase;
     margin: 5px;
     padding: 2px;
+    font-size: 1.3rem;
 }
 
 .coronavirusNews>p {
     color: white;
     border: 1px solid white;
     margin: 10px;
-    background: blueviolet;
     padding: 5px;
+}
+
+.confirmed {
+    background: #e2e23c;
+}
+
+.recovered {
+    background: #008000a6;
+}
+
+.deaths {
+    background: #ff00009c;
 }
