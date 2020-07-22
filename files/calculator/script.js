@@ -1,5 +1,4 @@
 (() => {
-
     let inputs = document.querySelectorAll('.input-windows>input');
     let buttons = document.querySelectorAll('.container-buttons > .btn');
 
@@ -34,7 +33,6 @@
 
     function setThemes() {
         let calculator = document.querySelector('.calculator');
-        console.log(calculator);
         let themes = [
             { background: 'rgb(20, 158, 178)', color: '#fff' },
             { background: 'rgb(176, 178, 20)', color: '#fff700' },
@@ -45,8 +43,6 @@
         let func = (styles = {}) => {
             for (let i in styles) {
                 calculator.style[i] = styles[i];
-
-                // console.log(i + ': ' + styles[i]);
             }
         }
         let buttons = document.querySelectorAll('.theme-switch div>button');
