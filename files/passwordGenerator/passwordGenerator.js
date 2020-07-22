@@ -75,21 +75,3 @@ class Password {
 
 // console.log(password.status(pswrd1));
 // console.log(password.status(pswrd2));
-
-(() => {
-    let range_pswrd = document.getElementById("range_pswrd");
-
-    range_pswrd.addEventListener('input', function() {
-        let label = document.querySelector('#range_pswrd+label');
-        label.innerHTML = range_pswrd.value;
-    });
-
-    let generate = document.getElementById("generate");
-
-    generate.addEventListener('click', function() {
-        let output = document.getElementById('output');
-
-        let pswrd = new Password().generate(range_pswrd.value);
-        output.innerHTML = pswrd;
-    });
-})();
