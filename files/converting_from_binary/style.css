@@ -1,5 +1,9 @@
 body {
-    background: darkgray;
+    background: #a9a9a982;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -10,40 +14,61 @@ h1 {
 
 .convert-block {
     border: 1px solid black;
-    width: fit-content;
-    text-align: center;
-    background: cadetblue;
+    width: 300px;
     margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.block-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: aqua;
+}
+
+p {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 1.4em;
 }
 
 .wrapper_input {
-    display: inline;
-    font-family: cursive;
-    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 10px;
 }
 
-input {
-    text-align: center;
-    font-family: monospace;
-    background: rgba(225, 225, 225, 0.5);
-    border: 1px solid white;
+.input {
+    width: 100%;
 }
 
-input:focus {
-    background: white;
-    border: 1px solid #16ceff;
+.block-body {
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
 }
 
 button {
-    background: #3188a2;
-    color: white;
+    font-size: 1.1em;
 }
 
-sub {
-    font-size: 11px;
+.block-footer {
+    width: 100%;
+    height: max-content;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
 }
 
 .wrapper_output {
-    background: beige;
-    font-family: cursive;
+    font-size: 1.4em;
+}
+
+@media (max-width:425px) {
+    h1 {
+        font-size: inherit;
+    }
 }
