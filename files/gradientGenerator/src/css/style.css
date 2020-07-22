@@ -8,16 +8,8 @@ html,
 body {
     width: 100vw;
     height: 100vh;
-    /* background: linear-gradient(295deg, rgb(181, 39, 106), rgb(247, 251, 51)); */
-}
-
-body {
-    transition: 0.3s;
     background-size: contain;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+    /* background: linear-gradient(295deg, rgb(181, 39, 106), rgb(247, 251, 51)); */
 }
 
 .container {
@@ -26,63 +18,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -50px 0;
 }
 
-.ranges {
-    font-family: cursive;
-    font-size: 1.3em;
-    width: max-content;
-    margin: 131px auto 20px;
+.btn {
+    margin: 0 10px;
 }
 
-.ranges p {
-    margin: 15px 0;
-    text-align: center;
+.btn button {
+    border: 1px solid black;
+    font-family: sans-serif;
+    font-size: 1.7em;
+    padding: 10px;
+    border-radius: 100px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: background 0.3s ease-in;
+    -webkit-transition: background 0.3s ease-in;
+    -moz-transition: background 0.3s ease-in;
+    -ms-transition: background 0.3s ease-in;
+    -o-transition: background 0.3s ease-in;
 }
 
-.ranges p input {
-    width: 100%;
-    display: block;
+.btn button:hover {
+    background-color: #ff4747;
 }
-
-
-/* @media (max-width:470px) {
-    .ranges {
-        font-size: calc(1.5rem + 4px + (100vw - 375px) / 200);
-    }
-} */
-
-@media (max-width:360px) {
-    .ranges {
-        font-size: calc(1.5rem - 3px + (100vw - 375px) / 200);
-    }
-}
-
-@media (max-width:240px) {
-    .ranges {
-        font-size: calc(1.5rem - 8px + (100vw - 500px) / 100);
-    }
-}
-
-@media (max-width:140px) {
-    .ranges {
-        font-size: calc(1.5rem - 8px + (100vw - 500px) / 100);
-    }
-    .ranges p {
-        margin: 15px auto;
-    }
-    .ranges p input {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-}
-
-
-/*background: radial-gradient(circle closest-corner at 100px 140px, #fff, #000);
-    */
-
-
-/*background-repeat: no-repeat;
-    */
