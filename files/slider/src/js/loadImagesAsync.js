@@ -1,9 +1,9 @@
 let arrayImages = [
-    loadImageAsync("../slider/images/png/image_1.png"),
-    loadImageAsync("../slider/images/png/image_2.png"),
-    loadImageAsync("../slider/images/png/image_3.png"),
-    loadImageAsync("../slider/images/png/image_4.png"),
-    loadImageAsync("../slider/images/png/image_5.png"),
+    loadImageAsync("../slider/images/jpg/image_1.jpg"),
+    loadImageAsync("../slider/images/jpg/image_2.jpg"),
+    loadImageAsync("../slider/images/jpg/image_3.jpg"),
+    loadImageAsync("../slider/images/jpg/image_4.jpg"),
+    loadImageAsync("../slider/images/jpg/image_5.jpg"),
 ];
 
 
@@ -12,7 +12,8 @@ function loadImageAsync(url) {
         const img = new Image();
         img.src = url;
         img.alt = 'Slider Image';
-        img.onload = resolve(img);
+        img.onload = () => resolve(img);
+        // setTimeout(() => { resolve(img); }, 5000);
     });
 }
 
@@ -29,8 +30,9 @@ Promise.all(arrayImages)
 
             if (index >= (elem.length - 1)) {
                 let overlay = document.querySelector('.overlay');
-                overlay.classList.add('hide');
-                setTimeout(() => overlay.remove(), 2900);
+                overlay.remove();
+                console.log('Загрузка завершена!');
+                init();
             }
         }
     });
