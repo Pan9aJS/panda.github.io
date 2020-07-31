@@ -17,15 +17,15 @@ body {
 }
 
 .container {
+    width: fit-content;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
-    width: 500px;
-    height: 250px;
     min-height: 100px;
-    margin: 25px auto auto;
+    margin: 25px auto;
+    font-size: 1.3em;
 }
 
 .container .input-boxes {
@@ -37,22 +37,40 @@ body {
 }
 
 .container .box {
+    width: 100%;
     border: 1px solid black;
     font-family: serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     background: #81d8ff;
     box-shadow: -2px 2px 4px 1px #000000;
+    display: flex;
+    justify-content: inherit;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.container .box input {
+    width: 100%;
+    border: 1px solid #7d7070;
+    display: block;
+    height: 25px;
 }
 
 .container .box.toggle {
-    font-size: calc(2.3rem - 12px - (100vw - 530px) / 600);
     border: none;
     background: none;
     color: white;
     margin: 0 20px;
-    padding: 0px 5px;
+    padding: 0px 3%;
     cursor: pointer;
-    /* background: #ff4444; */
+    width: auto;
+    min-width: max-content;
+    height: max-content;
+}
+
+.box.toggle p {
+    width: 100%;
 }
 
 .container .btn-calc {
@@ -79,4 +97,20 @@ body {
 .btn-calc button:hover {
     border: 3px solid #9a6565;
     color: black;
+}
+
+@media screen and (max-width:425px) {
+    .container .input-boxes {
+        width: 100%;
+    }
+    .container .box.toggle {
+        margin: 10px auto;
+        width: max-content;
+    }
+    .container .box {
+        margin: 0px 30px;
+    }
+    .btn-calc button {
+        font-size: 0.8em;
+    }
 }
