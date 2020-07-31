@@ -65,8 +65,9 @@ body {
     padding: 0px 3%;
     cursor: pointer;
     width: auto;
-    min-width: max-content;
+    min-width: 65px;
     height: max-content;
+    text-align: center;
 }
 
 .box.toggle p {
