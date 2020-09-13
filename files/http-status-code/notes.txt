@@ -1,0 +1,21 @@
+  <div class="response-code-block">
+                    <p id="response-code">Код ответа:</p>
+                    <span id="response-code-value">404 Not found</span>
+                </div>
+
+                <!-- Блок со значением класса, кода ответа -->
+                <div class="response-code-class-block">
+                    <p id="response-code-class">Класс:</p>
+                    <span id="response-code-class-value">4</span>
+                </div>
+                <!-- Блок со значением кода ответа -->
+                <div class="meaning-block">
+                    <p id="meaning-code">Значение:</p>
+                    <span id="meaning-code-value">Ошибка 404 — код ответа сервера, который сообщает пользователю, что сервер не может найти запрашиваемые данные.</span>
+                </div>
+
+                <!-- Блок с более подробным описанием кода ответа -->
+                <div class="description-block">
+                    <p id="description-code">Описание:</p>
+                    <span id="description-code-value">Самая распространённая ошибка при пользовании Интернетом, основная причина — ошибка в написании адреса Web-страницы. Сервер понял запрос, но не нашёл соответствующего ресурса по указанному URL.</span>
+                </div>

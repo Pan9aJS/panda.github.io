@@ -1,0 +1,28 @@
+{
+    "name": "http_status_code",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "license",
+    "dependencies": {
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-debug": "^4.0.0",
+        "gulp-stylus": "^2.7.0",
+        "stylus": "^0.54.8",
+        "webpack": "^4.44.1"
+    },
+    "devDependencies": {
+        "del": "^5.1.0",
+        "fs": "0.0.1-security",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "node-sass": "^4.14.1",
+        "webpack-cli": "^3.3.12"
+    }
+}
